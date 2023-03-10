@@ -1,0 +1,20 @@
+.spoiler {
+  padding-left: 32px;
+  background-color: transparent;
+  border: 0;
+  background: url('../assets/img/icons/down-double-arrow.svg') no-repeat 8px 50%;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+  }
+}
+
+.spoiler--active {
+  background: url('../assets/img/icons/up-double-arrow.svg') no-repeat 8px 50%;
+}

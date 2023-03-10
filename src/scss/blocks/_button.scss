@@ -1,0 +1,39 @@
+.button {
+  cursor: pointer;
+
+  &:hover {
+    filter: hue-rotate(30deg);
+    transition: filter 0.3s;
+
+    .button__description {
+      text-decoration: underline;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &__img {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__description {
+    @media (min-width: 1120px) {
+      display: inline;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: 1120px) {
+      display: flex;
+      column-gap: 9px;
+      align-items: center;
+    }
+  }
+}

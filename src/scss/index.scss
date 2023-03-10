@@ -1,0 +1,23 @@
+@import './fonts';
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/swiper/swiper-bundle.css';
+@import './vars';
+@import './reset';
+@import './global';
+
+@import './blocks/overlay';
+@import './blocks/page-title';
+@import './blocks/section-title';
+@import './blocks/spoiler';
+@import './blocks/swiper';
+@import './blocks/button';
+
+@import './blocks/burger';
+@import './blocks/modal';
+
+@import './blocks/header';
+@import './blocks/about';
+@import './blocks/brands';
+@import './blocks/repair';
+@import './blocks/price';
+@import './blocks/footer';

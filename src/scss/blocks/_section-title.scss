@@ -1,0 +1,22 @@
+.section-title-container {
+  padding: 16px;
+  border-top: 1px solid $border-section;
+  background-image: linear-gradient(to right, $color-body 0%, #ffffff 98.61%);
+
+  @media (min-width: 768px) {
+    padding: 16px 24px;
+  }
+
+  @media (min-width: 1120px) {
+    padding: 16px 32px;
+  }
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $text-color--muted;
+  text-transform: uppercase;
+}

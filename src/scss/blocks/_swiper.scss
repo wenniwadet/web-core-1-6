@@ -1,0 +1,16 @@
+.bullet--gap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.bullet--active {
+  background-color: $color-bullet--active;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}

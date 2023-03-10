@@ -1,0 +1,111 @@
+.repair {
+  padding-bottom: 24px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  &__container {
+    padding: 16px 0 16px 16px;
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      padding: 24px 24px 32px 24px;
+    }
+
+    @media (min-width: 1120px) {
+      padding: 24px 32px 50px 32px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 166px;
+      right: 0;
+      z-index: 2;
+      background-image: linear-gradient(
+        270deg,
+        $color-body 16.84%,
+        rgba(248, 248, 248, 0.0001) 100%
+      );
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__list {
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 16px;
+      max-height: 160px;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in;
+    }
+
+    @media (min-width: 1120px) {
+      column-gap: 32px;
+    }
+  }
+
+  &__list--show-all {
+    @media (min-width: 768px) {
+      max-height: 512px;
+      transition: max-height 0.5s ease-in;
+    }
+
+    @media (min-width: 1120px) {
+      max-height: 336px;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+    padding: 16px;
+    width: 240px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $border-item;
+    border-radius: 6px;
+    background-color: $color-item;
+
+    @media (min-width: 768px) {
+      width: 224px;
+    }
+
+    @media (min-width: 1120px) {
+      width: 240px;
+    }
+  }
+
+  &__card-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+  }
+
+  &__button {
+    margin-left: auto;
+
+    &:hover {
+      border-radius: 50%;
+      box-shadow: 0 0 7px 0 $color-button--active;
+      transition: box-shadow 0.3s;
+    }
+  }
+
+  &__spoiler {
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}
